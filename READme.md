@@ -70,11 +70,11 @@ Le prochain onglet de paramètres se nomme : ![image](images/ioc.png)
 
 Les IOC (Indicateurs de Compromission) sont des moyens de détecter si un système ou un réseau a été compromis. Ces indicateurs peuvent être des adresses IP, des domaines ou URL malveillants, des hachages de fichiers, des signatures de fichiers, des noms de fichiers inhabituels, des comportement réseau anormal, des clés de registre ou processus suspects (Windows), des emails frauduleux,etc ...
 
-Donc dans Gérer les IOCs vous pouvez en importer en définissant leur type, leur domaine, etc ...
+Donc dans **Gérer les IOCs** vous pouvez en importer en définissant leur type, leur domaine, etc ...
 Sinon vous pouvez importer un fichier qui contient des IOCs par exemple d'une base de données connues comme virustotal, etc ...
 Ou alors exporter la base de données actuelle des IOCs.
 
-Et dans Chercher les IOCs, vous pouvez faire des recherches dans la base de données actuelle sur le logiciel afin de vérifier la présence ou non d'un IOC.
+Et dans **Chercher les IOCs**, vous pouvez faire des recherches dans la base de données actuelle sur le logiciel afin de vérifier la présence ou non d'un IOC.
 
 
 ## La whitelist
@@ -84,3 +84,35 @@ Et dans Chercher les IOCs, vous pouvez faire des recherches dans la base de donn
 Cet onglet va permettre d'éviter les faux-posififs en ajoutant des éléments qui de base sont considérés comme "dangereux" en éléments pas "dangereux".
 
 Par exemple si vous savez que vous avez un logiciel ou quelque chose sur votre appareil qui pourrait être considéré comme "dangereux" par SpyGuard (par exemple une application), vous pouvez l'ajouter en tant qu'élément autorisé donc dans la whitelist afin que lors de l'analyse SpyGuard ne le détecte pas et ne pense pas qu'il y ait un logiciel espion sur votre appareil.
+
+
+Dans **Gérer les éléments**, vous pouvez soit : 
+- importer vous même un élément en précisant son type par exemple (une adresse IP, un nom de domaine, etc ...) afin qu'il soit whitelist
+- importer un élément depuis un fichier afin qu'il soit whitelist
+- exporter un fichier qui liste tous les éléments whitelist
+
+Dans **Chercher les éléments** vous pouvez chercher un élément qui est dans la liste de tous les éléments whitelist. Une fois trouvé, vous pouvez le supprimer.
+
+## Sources extérieures
+
+![image](images/instance.png)
+
+Cet onglet va permettre d'ajouter des sources extérieures comme des Watchers ou des MISP.
+
+Un **watcher** est un module configuré pour surveiller le trafic réseau d'un appareil, utilisant des IOCs et des techniques de détection d'anomalies pour identifier des signes de compromission.
+
+Dans **Instances Watchers** vous pouvez en ajouter un en définissant :
+- le nom du watcher
+- son URL 
+- et son type : soit IOC, soit whitelist
+
+Ainsi que voir quels sont les watchers déjà présents.
+
+Une **instance MISP** fait référence à une installation locale ou hébergée de la plateforme MISP (Malware Information Sharing Platform). MISP est un logiciel open source conçu pour faciliter le partage d'informations sur les menaces (Threat Intelligence), comme les IOC (Indicators of Compromise) ou d'autres données liées à la cybersécurité.
+
+Dans **Instances MISP** vous allez pouvoir ajouter une instance MISP en précisant :
+- son nom
+- son URL 
+- sa clé d'authentification
+
+Ainsi que voir quels MISP sont déjà présents.
