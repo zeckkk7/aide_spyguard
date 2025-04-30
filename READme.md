@@ -2,10 +2,10 @@
 
 Sur ce site vous retrouverez de l'aide sur comment utiliser le logiciel SpyGuard.
 
-SpyGuard est un logiciel avancé de TinyCheck. Il sert à détecter si ou non votre appareil est espionné par un tier.
+SpyGuard est un logiciel avancé de TinyCheck. Il sert à détecter si oui ou non votre appareil est espionné par un tier.
 
 Pour cela il utilise le wifi, ce qui signifie qu'il peut être utilisé contre plusieurs appareils comme des téléphones, des tablettes, des ordinateurs portables.
- 
+
 ## Lien
 
 Si vous souhaitez modifier des paramètres/configurer SpyGuard, veuillez cliquer sur ce <a href="https://localhost:8443" target="_blank">lien</a> les identifiants sont _cybercape/cybercape_ 
@@ -27,7 +27,7 @@ Effectivement il y a plusieurs réglages possibles : ![image](images/settings.pn
 ---
 Dans cet onglet, on retrouve plusieurs paramètres :
 
-- Utiliser un clavier virtuel (pour écran tactil)
+- Utiliser un clavier virtuel (pour écran tactile)
 - Autoriser l'utilisateur à éteindre l'appareil (sur la page analyse).
 - Autoriser l'utilisateur à accéder au backend (sur la page analyse).
 - Utiliser des SSID tokenisés.
@@ -120,3 +120,7 @@ Dans **Instances MISP** vous allez pouvoir ajouter une instance MISP en précisa
 - sa clé d'authentification
 
 Ainsi que voir quels MISP sont déjà présents.
+
+
+
+![image](cybercape.png)
