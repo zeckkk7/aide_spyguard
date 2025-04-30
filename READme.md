@@ -32,8 +32,26 @@ Dans cet onglet, on retrouve plusieurs paramètres :
 
 Ici le seul paramètre qui pourrait être modifier est le paramètre : **Télécharger localement les captures réseaux**. 
 
-__Si vous n'avez pas de clé USB, activer ce paramètre afin que les captures réseaux soient enregistrées dans le fichier Downloads de l'ordinateur. Grâce à cela vous pourrez vous envoyer par mail en vous connectant sur le navigateur(gmail, etc ...) ou autre moyen le fichier zip créé et sauvegardé dans le dossier Downloads.__
+__Si vous n'avez pas de clé USB, activer ce paramètre afin que les captures réseaux soient enregistrées dans le dossier Downloads de l'ordinateur. Grâce à cela vous pourrez vous envoyer par mail en vous connectant sur le navigateur(gmail, etc ...) ou autre moyen le fichier zip créé et sauvegardé dans le dossier Downloads.__
 
 
 Le reste n'influant pas directement sur l'analyse.
 
+### Outil d'analyse 
+
+Dans cet onglet, on retrouve les différentes méthodes de détection qui agissent directement sur l'analyse.
+
+Nous vous conseillons de laisser tout activer pour que l'analyse soit la plus complète possible.
+
+
+### Config réseau
+
+Ce paramètre est très important car il va permettre ou non l'analyse. Effectivement si vous ne sélectionnez pas les bons ports alors l'analyse ne pourra pas marcher.
+
+Le port qui doit être sélectionné pour **l'interface wifi pour créer le point d'accès** est le port qui commence par _wlan_ .
+Vu que le logiciel va créer un point d'accès wifi pour faire l'analyse de votre appareil alors il faut bien renseigner le port wlan.
+
+
+Le port qui doit être sélectionné pour **interface vers internet** est le port qui commence par _eth_ .
+
+Pour les SSIDs vous pouvez en créer des nouveaux ou en supprimer certains déjà existant mais nous vous le déconseillons car cela pourrait causé des bugs au logiciel et donc celui-ci pourrait ne plus fonctionner. 
