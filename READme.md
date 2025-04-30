@@ -1,13 +1,13 @@
 # Bienvenue sur le site SpyGuard de CyberCape
----
+
 Sur ce site vous retrouverez de l'aide sur comment utiliser le logiciel SpyGuard.
 
 ## Lien
----
+
 Si vous souhaitez modifier des paramètres veuillez cliquer sur ce <a href="https://localhost:8443" target="_blank">lien</a> les identifiants sont cybercape/cybercape ou si vous souhaitez directement passer à l'analyse de votre appareil veuillez cliquer sur ce <a href="https://localhost:8000" target="_blank">lien</a>.
 
 ## Paramètres du logiciel
----
+
 Les premier paramètres se trouvent dans l'onglet ![image](images/gerer_app.png) 
 
 Effectivement il y a plusieurs réglages possibles : ![image](images/settings.png)
@@ -17,7 +17,7 @@ Effectivement il y a plusieurs réglages possibles : ![image](images/settings.pn
 - Config réseau va permette de définir les ports que va utiliser SpyGuard.
 - Gérer la database va permettre de gérer la base de données.
 
-## Config appareil
+### Config appareil
 ---
 Dans cet onglet, on retrouve plusieurs paramètres :
 
@@ -37,14 +37,14 @@ __Si vous n'avez pas de clé USB, activer ce paramètre afin que les captures r�
 
 Le reste n'influant pas directement sur l'analyse.
 
-## Outil d'analyse 
+### Outil d'analyse 
 ---
 Dans cet onglet, on retrouve les différentes méthodes de détection qui agissent directement sur l'analyse.
 
 Nous vous conseillons de laisser tout activer pour que l'analyse soit la plus complète possible.
 
 
-## Config réseau
+### Config réseau
 ---
 Ce paramètre est très important car il va permettre ou non l'analyse. Effectivement si vous ne sélectionnez pas les bons ports alors l'analyse ne pourra pas marcher.
 
@@ -57,8 +57,31 @@ Le port qui doit être sélectionné pour **interface vers internet** est le por
 Pour les SSIDs vous pouvez en créer des nouveaux ou en supprimer certains déjà existant mais nous vous le déconseillons car cela pourrait causé des bugs au logiciel et donc celui-ci pourrait ne plus fonctionner. 
 
 
-## Gérer la database
+### Gérer la database
 ---
 Dans cet onglet, vous pouvez soit importer une base de données ou alors exporter la base de données en cours.
+
+
+## Les IOCs
+
+Le prochain onglet de paramètres se nomme : ![image](images/ioc.png)
+
+Les IOC (Indicateurs de Compromission) sont des moyens de détecter si un système ou un réseau a été compromis. Ces indicateurs peuvent être des adresses IP, des domaines ou URL malveillants, des hachages de fichiers, des signatures de fichiers, des noms de fichiers inhabituels, des comportement réseau anormal, des clés de registre ou processus suspects (Windows), des emails frauduleux,etc ...
+
+Donc dans Gérer les IOCs vous pouvez en importer en définissant leur type, leur domaine, etc ...
+Sinon vous pouvez importer un fichier qui contient des IOCs par exemple d'une base de données connues comme virustotal, etc ...
+Ou alors exporter la base de données actuelle des IOCs.
+
+Et dans Chercher les IOCs, vous pouvez faire des recherches dans la base de données actuelle sur le logiciel afin de vérifier la présence ou non d'un IOC.
+
+
+## La whitelist
+
+![image](images/whitelist.png)
+
+Cet onglet va permettre d'éviter les faux-posififs en ajoutant des éléments qui de base sont considérés comme "dangereux" en éléments pas "dangereux".
+
+Par exemple si vous savez que vous avez un logiciel ou quelque chose sur votre appareil qui pourrait etre considéré comme "dangereux" par SpyGuard (par exemple une application), vous pouvez l'ajouter en tant qu'élément autorisé donc dans la whitelist afin que lors de l'analyse SpyGuard ne le détecte pas et ne pense pas qu'il y a un logiciel espion.
+
 
 
