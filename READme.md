@@ -123,4 +123,4 @@ Ainsi que voir quels MISP sont déjà présents.
 
 
 
-![image](cybercape.png)
+![image](images/cybercape.png)
