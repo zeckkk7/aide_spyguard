@@ -8,4 +8,4 @@ Si vous souhaitez modifier des paramètres veuillez cliquer sur ce <a href="http
 
 ### Paramètres du logiciel
 
-Le premier paramètre se trouve dans l'onglet [image](images/gerer_app.png)
+Le premier paramètre se trouve dans l'onglet ![image](images/gerer_app.png)
