@@ -2,9 +2,9 @@
 
 Sur ce site, vous trouverez de l'aide pour utiliser le logiciel SpyGuard.
 
-SpyGuard est un logiciel avancé de TinyCheck. Il sert à détecter si votre appareil est espionné par un tiers.
+SpyGuard est un logiciel qui sert à détecter si votre appareil est espionné par un tiers.
 
-Pour cela il utilise le wifi, ce qui signifie qu'il peut être utilisé avec plusieurs appareils comme des téléphones, des tablettes, des ordinateurs portables, etc ...
+Pour cela il utilise le wifi, ce qui signifie qu'il peut être utilisé avec plusieurs appareils en même temps comme des téléphones, des tablettes, des ordinateurs portables, etc ...
 
 ## Lien
 
@@ -12,13 +12,14 @@ Si vous souhaitez modifier des paramètres/configurer SpyGuard, veuillez cliquer
 
 Si vous souhaitez directement passer à l'analyse de votre appareil en gardant les paramètres par défaut, veuillez cliquer sur ce <a href="https://localhost:8000" target="_blank">lien</a>.
 
+**__RPi est le boitier sur lequel est installé le logiciel SpyGuard.__**
 ## Paramètres du logiciel
 
 Les premiers paramètres se trouvent dans l'onglet ![image](images/gerer_app.png) 
 
 Effectivement il y a plusieurs réglages possibles : ![image](images/settings.png)
 
-- Config appareil permet de configurer SpyGuard. 
+- Config du logiciel permet de configurer SpyGuard. 
 - Outil d'analyse va permettre de configurer les méthodes de détection.
 - Config réseau permet de définir les ports que va utiliser SpyGuard.
 - Gérer la database va permettre de gérer la base de données.
@@ -28,12 +29,12 @@ Effectivement il y a plusieurs réglages possibles : ![image](images/settings.pn
 Dans cet onglet, on retrouve plusieurs paramètres :
 
 - Utiliser un clavier virtuel (pour écran tactile)
-- Autoriser l'utilisateur à éteindre l'appareil (sur la page analyse).
+- Autoriser l'utilisateur à éteindre le RPi (sur la page analyse).
 - Autoriser l'utilisateur à accéder au backend (sur la page analyse).
 - Utiliser des SSID tokenisés.
-- Télécharger localement les captures réseaux (Si vous n'avez pas de clé USB).
-- Afficher les sparklines d'arrière-plan pendant la capture (sur la page analyse).
-- Autoriser l'accès à distance au frontend.
+- Télécharger localement(sur le RPi) les captures réseaux (Si vous n'avez pas de clé USB).
+- Mimer grâce à un diagramme le comportement du réseau en arrière-plan pendant la capture (sur la page analyse).
+- Autoriser l'accès à distance au frontend().
 - Autoriser l'accès à distance au backend. 
 
 Ici le seul paramètre qui pourrait être modifier est le paramètre : **Télécharger localement les captures réseaux**. 
@@ -54,8 +55,10 @@ Nous vous conseillons de laisser tout activer pour que l'analyse soit la plus co
 ---
 Ce paramètre est très important car il va permettre ou non l'analyse. Effectivement si vous ne sélectionnez pas les bons ports alors l'analyse ne pourra pas marcher.
 
+Les ports ne changent pas au redémarrage, ce qui signifie que vous n'avez pas besoin d'aller à chaque fois sélectionner les bons ports.
+
+
 Le port à sélectionner pour l'interface Wi-Fi, afin de créer le point d'accès, est celui qui commence par 'wlan'.
-Vu que le logiciel va créer un point d'accès wifi pour faire l'analyse de votre appareil alors il faut bien renseigner le port wlan.
 
 
 Le port qui doit être sélectionné pour **interface vers internet** est le port qui commence par _eth_ .
@@ -91,7 +94,7 @@ Par exemple si vous savez que vous avez un logiciel ou quelque chose sur votre a
 
 
 Dans **Gérer les éléments**, vous pouvez soit : 
-- importer vous même un élément en précisant son type par exemple (une adresse IP, un nom de domaine, etc ...) afin qu'il soit whitelist
+- importer vous même un élément en précisant son type (une adresse IP, un nom de domaine, etc ...) afin qu'il soit whitelist
 - importer un élément depuis un fichier afin qu'il soit whitelist
 - exporter un fichier qui liste tous les éléments whitelist
 
